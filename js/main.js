@@ -128,7 +128,7 @@ function busquedaJugadoresMaximo(juego){
 }
 
 function noHayResultado(){
-    alert("No hay resultados en la base de datos");
+    console.log("No hay resultados en la base de datos");
 }
 
 function busquedaDeJuegos(){
