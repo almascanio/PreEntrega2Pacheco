@@ -142,7 +142,7 @@ function busquedaDeJuegos(){
 }
 
 function busquedaDeJuegosDos() {
-    let resultado2 = juegos.filter(edadRecomendada).filter(busquedaJugadoresMinimo).filter(busquedaJugadoresMaximo)
+    let resultado2 = juegos.filter(edadRecomendada).filter(jugadoresMinimo).filter(jugadoresMaximo)
     console.log(resultado2);
     if (resultado2.length){
         posiblesJuegos(resultado2)
