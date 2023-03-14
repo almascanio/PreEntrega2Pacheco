@@ -1,0 +1,70 @@
+const juegos = [
+    {
+        nombre: 'Parchis',
+        edadRecomendada: '6 años en adelante',
+        jugadoresMinimo: '2',
+        jugadoresMaximo: '4',
+        materialDeJuego: 'Fichas, dados, hoja y lapicera para anotar',
+    },
+    {
+        nombre: 'Domino',
+        edadRecomendada: '6 años en adelante',
+        jugadoresMinimo: '2',
+        jugadoresMaximo: '4',
+        materialDeJuego: 'Fichas, hoja y lapicera para anotar',
+    },
+    {
+        nombre: 'Monopolio',
+        edadRecomendada: '8 años en adelante',
+        jugadoresMinimo: '2',
+        jugadoresMaximo: '8',
+        materialDeJuego: 'Tablero, dinero, bandeja del banquero, fichas, dados, cartas, casas y hoteles',
+    },
+    {
+        nombre: 'Damas',
+        edadRecomendada: '8 años en adelante',
+        jugadoresMaximo: '2',
+        materialDeJuego: 'Tablero, y piezas correspondientes',
+    },
+    {
+        nombre: 'Ajedrez',
+        edadRecomendada: '8 años en adelante',
+        jugadoresMaximo: '2',
+        materialDeJuego: 'Tablero, y piezas correspondientes',
+    },
+    {
+        nombre: 'Poker',
+        edadRecomendada: '18 años en adelante con apuestas',
+        jugadoresMinimo: '2',
+        jugadoresMaximo: '7',
+        materialDeJuego: 'Cartas, maletin con fichas y un tapete',
+    },
+    {
+        nombre: 'Bingo',
+        edadRecomendada: '6 años en adelante',
+        jugadoresMinimo: '2',
+        jugadoresMaximo: 'Sin limites',
+        materialDeJuego: 'Bolillero, bolas de numero, cartones, mesas y para marcar',
+    },
+    {
+        nombre: 'Truco',
+        edadRecomendada: '18 años en adelante con apuestas, menos sin',
+        jugadoresMinimo: '2',
+        jugadoresMaximo: '6',
+        materialDeJuego: 'Cartas españolas, hoja y lapicera para anotar',
+    },
+    {
+        nombre: 'Jenga',
+        edadRecomendada: '6 años en adelante',
+        jugadoresMinimo: '2',
+        jugadoresMaximo: '4',
+        materialDeJuego: 'Un jenga (Bloques)',
+    },
+    {
+        nombre: 'Chichon',
+        edadRecomendada: '18 años en adelante con apuestas, menos sin',
+        jugadoresMinimo: '2',
+        jugadoresMaximo: '8',
+        materialDeJuego: 'Cartas españolas, hoja y lapicera para anotar',
+    }
+]
