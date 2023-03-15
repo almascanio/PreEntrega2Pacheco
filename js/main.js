@@ -77,21 +77,21 @@ if (jugador == enemigo){
 
 console.log("Termino el juego, gracias por participar");
 
-// Segunda parte 
+// Segunda parte, con variables, objetos, array y funciones 
 
-alert("Ahora me podrias decir si te gusta otro juego?");
+alert("Ahora me podrias decir si te gusta algun otro juego?");
 
-let juegoFavorito = prompt("Ingresa por favor el nombre del juego que te gusta, puede que no este disponible");
+//console.log(juegos);
+
+let juegoFavorito = prompt("Ingresa por favor el nombre de otro juego que te guste, puede que no este disponible");
 
 const busqueda = {
     nombre: juegoFavorito,
-    edadRecomendada: '',
-    jugadoresMinimo: '2',
+    edadRecomendada: '8 años en adelante',
+    jugadoresMinimo: '',
     jugadoresMaximo: '',
     materialDelJuego: ''
 }
-
-//console.log(juegos);
 
 function posiblesJuegos(juegos){
     juegos.forEach(juego => {
@@ -101,14 +101,14 @@ function posiblesJuegos(juegos){
 
 function busquedaJuegoFavorito(juego){
     if(busqueda.nombre){
-        return juego.nombre === busqueda.nombre
+        return juego.nombre == busqueda.nombre
     }
     return juego;
 }
 
 function busquedaEdadRecomendada(juego){
     if(busqueda.edadRecomendada){
-        return juego.edadRecomendada === busqueda.edadRecomendada
+        return juego.edadRecomendada == busqueda.edadRecomendada
     }
     return juego;
 }
@@ -127,8 +127,10 @@ function busquedaJugadoresMaximo(juego){
     return juego;
 }
 
+// No se como hacer que solo aparezca cuando no hay resultados, siempre aparece
+
 function noHayResultado(){
-    console.log("No hay resultados en la base de datos");
+    console.log("No hay resultados del juego que te gusta, perdon");
 }
 
 function busquedaDeJuegos(){
@@ -142,8 +144,8 @@ function busquedaDeJuegos(){
 }
 
 function busquedaDeJuegosDos() {
-    let resultado2 = juegos.filter(edadRecomendada).filter(jugadoresMinimo).filter(jugadoresMaximo)
-    console.log(resultado2);
+    let resultado2 = juegos.filter(busquedaEdadRecomendada).filter(busquedaJugadoresMinimo).filter(busquedaJugadoresMaximo)
+    //console.log(resultado2);
     if (resultado2.length){
         posiblesJuegos(resultado2)
     } else {
@@ -152,4 +154,4 @@ function busquedaDeJuegosDos() {
 }
 
 busquedaDeJuegos();
-//posiblesJuegos(juegos);
+busquedaDeJuegosDos();
